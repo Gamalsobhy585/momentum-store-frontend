@@ -1,14 +1,154 @@
+:root {
+  --primary-green: #00BFA6;
+  --primary-blue: #0078A8;
+  --secondary-dark-blue: #005F6B;
+  --secondary-light-green: #A3E4DB;
+  --neutral-white: #FFFFFF;
+  --neutral-light-gray: #F1F1F1;
+  --neutral-dark-gray: #333333;
+  --accent-teal: #008080;
+  --accent-soft-blue: #ADD8E6;
+}
 
+body {
+  font-family: var(--main-font);
+  width: 100%;
+  overflow-x: hidden !important;
+  background: linear-gradient(to right, var(--primary-blue), var(--secondary-dark-blue));
+  color: var(--neutral-white);
+}
 
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
 
+.my-input {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+}
 
+.social-media i {
+  color: var(--accent-teal);
+}
 
+.nav {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: var(--neutral-white);
+  color: var(--primary-blue);
+  width: 100%;
+}
 
+.product-name {
+  color: var(--neutral-white);
+  margin-bottom: 10px;
+}
 
+.rate {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: var(--accent-soft-blue);
+}
+
+.description h5 {
+  margin-top: 20px;
+  color: var(--secondary-light-green);
+}
+
+.product-description {
+  line-height: 2.6;
+  color: var(--neutral-light-gray);
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-light-green);
+}
+
+.quantity-container .btn {
+  background-color: var(--primary-blue);
+  color: var(--neutral-white);
+}
+
+.quantity-container .btn:hover {
+  background-color: var(--primary-green);
+  color: var(--neutral-dark-gray);
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, var(--primary-green), var(--accent-soft-blue));
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  background: linear-gradient(to bottom, var(--primary-blue), var(--accent-teal));
+  color: var(--neutral-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reg-button {
+  background: linear-gradient(to bottom, var(--primary-green), var(--accent-soft-blue));
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  color: var(--neutral-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card {
+  background-color: var(--neutral-dark-gray);
+  color: var(--neutral-white);
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.page-item .page-link {
+  color: var(--neutral-dark-gray);
+  background-color: var(--neutral-white);
+  border: 1px solid var(--neutral-light-gray);
+  transition: background-color 0.3s ease;
+}
+
+.page-item .page-link:hover {
+  background-color: var(--accent-soft-blue);
+  color: var(--neutral-white);
+}
 
 .offline {
   position: fixed;
-  bottom:  0;
+  bottom: 0;
   left: 0;
   width: 100%;
   padding: 20px;
@@ -21,143 +161,22 @@
   z-index: 1000;
   animation: slideDown 0.5s ease-in-out;
 }
-:root {
-  --primary-green: #00BFA6;
-  --primary-blue: #0078A8;
 
-  --secondary-dark-blue: #005F6B;
-  --secondary-light-green: #A3E4DB;
-
-  --neutral-white: #FFFFFF;
-  --neutral-light-gray: #F1F1F1;
-  --neutral-dark-gray: #333333;
-
-  --accent-teal: #008080;
-  --accent-soft-blue: #ADD8E6;
+.oleo-script-regular {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
-  body {
-  font-family: var(--main-font);
-  width: 100%;
-  overflow-x: hidden !important;
-  background: linear-gradient(to right, var(--primary-blue), var(--secondary-dark-blue));
-  color: var(--neutral-white);
 
-  }
- 
-  a{
-      text-decoration: none;
-      color: var(--font-color);
-  
-  }
-  .my-input{
-      background-color: transparent;
-      border: 1px solid var(--border-color);
-  
-  }
-  .social-media i{
-    color: var(--accent-teal);
-  }
-  .nav{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: var(--neutral-white);
-    color: var(--primary-blue);
-    width: 100%;
-  }
+.oleo-script-bold {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
 
-  
-
-  .product-name {
-    color: var(--neutral-white);
-    margin-bottom: 10px;
-  }
-  
-  .rate {
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-    color: var(--accent-soft-blue);
-  }
-  
-  .description h5 {
-    margin-top: 20px;
-    color: var(--secondary-light-green);
-  }
-  
-  .product-description {
-    line-height: 2.6;
-    color: var(--neutral-light-gray);
-  }
-  
-  .product-price {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--secondary-light-green);
-  }
-  
-  .quantity-container .btn {
-    background-color: var(--primary-blue);
-    color: var(--neutral-white);
-  }
-  
-  .quantity-container .btn:hover {
-    background-color: var(--primary-green);
-    color: var(--neutral-dark-gray);
-  }
-  
-  .button:hover {
-    background: linear-gradient(to bottom, var(--primary-green), var(--accent-soft-blue));
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .button {
-    background: linear-gradient(to bottom, var(--primary-blue), var(--accent-teal));
-    color: var(--neutral-white);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-  }
-  .reg-button{
-    background: linear-gradient(to bottom, var(--primary-green), var(--accent-soft-blue));
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    color: var(--neutral-white);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card {
-    background-color: var(--neutral-dark-gray);
-    color: var(--neutral-white);
-    height: 100%; 
-    border-radius: 8px; 
-  }
-  
-  .card-title {
-    font-weight: bold;
-  }
-  
-  .card-text {
-    font-size: 16px;
-  }
-
-  .oleo-script-regular {
-    font-family: "Oleo Script", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .oleo-script-bold {
-    font-family: "Oleo Script", system-ui;
-    font-weight: 700;
-    font-style: normal;
-  }
-  .page-link:hover{
-color: #FFFFFF;
-  }
-
+.page-link:hover {
+  color: #FFFFFF;
+}
 
 .cart-container {
   padding: 20px;
@@ -223,6 +242,7 @@ color: #FFFFFF;
 .remove-btn:hover {
   background-color: #c82333;
 }
+
 .not-found-container {
   min-height: 80vh;
 }
@@ -238,7 +258,7 @@ color: #FFFFFF;
 
 .not-found-container p {
   font-size: 1.2rem;
-  color: var(--neutral-dark-gray)
+  color: var(--neutral-dark-gray);
 }
 
 .vertical {
@@ -267,6 +287,7 @@ color: #FFFFFF;
 .register {
   border-radius: 1.4rem !important;
 }
+
 .gradient-text {
   color: transparent;
   background-image: linear-gradient(to bottom, var(--primary-green), var(--accent-soft-blue));
@@ -274,9 +295,11 @@ color: #FFFFFF;
   background-clip: text;
   font-weight: bold;
 }
-.logout-button{
+
+.logout-button {
   cursor: pointer;
 }
+
 .total-price-container {
   display: flex;
   flex-direction: column;
@@ -288,7 +311,7 @@ color: #FFFFFF;
   border-radius: 8px;
   background-color: #f8f9fa;
   width: fit-content;
-  margin-left: auto; /* To align it to the right */
+  margin-left: auto;
 }
 
 .total-price {

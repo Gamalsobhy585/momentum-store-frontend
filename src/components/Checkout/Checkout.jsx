@@ -75,7 +75,14 @@ export default function Checkout() {
             });
             setError(validationErrors);
         } else {
-            axios.post(`http://localhost:8000/api/place-order`, data).then(res => {
+            
+            const token = localStorage.getItem('userToken'); 
+    
+            axios.post(`http://localhost:8000/api/place-order`, data, {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            }).then(res => {
                 if (res.data.status === 200) {
                     swal("Order Placed Successfully", res.data.message, "success");
                     setError({});
@@ -89,7 +96,6 @@ export default function Checkout() {
             });
         }
     };
-
     const cities = [
         "Alexandria",
         "Aswan",
