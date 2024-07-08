@@ -81,9 +81,8 @@ export default function Cart() {
         <title>Your Cart</title>
       </Helmet>
       <ToastContainer />
-      <div className="cart-container">
-        <h1>Cart</h1>
-        <table className="cart-table">
+      <div className="cart-container  mt-md-5 ">
+        <table className="cart-table ">
           <thead>
             <tr>
               <th>Image</th>

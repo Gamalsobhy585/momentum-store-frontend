@@ -134,7 +134,7 @@ export default function Checkout() {
                 <meta charSet="utf-8" />
                 <title>Checkout Page</title>
             </Helmet>
-            <div className="col-md-12">
+            <div className="col-md-12 mt-3">
                 <div className="card">
                     <div className="card-header">
                         <h4>Basic Information</h4>

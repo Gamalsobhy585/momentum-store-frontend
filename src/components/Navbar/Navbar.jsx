@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar({ userData, logOut }) {
   return (
-    <nav className='p-2 d-flex nav justify-content-between align-items-center'>
+    <nav className='p-2 d-flex nav  justify-content-between align-items-center'>
       <div className="left-nav flex-md-row flex-column d-flex align-items-center">
         <h1 className='m-0 pe-3 h4'>
           <Link className='text-decoration-none' to='/'>
